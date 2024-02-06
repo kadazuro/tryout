@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "brightscript",
+      "request": "launch",
+      "envFile": "${workspaceFolder}/.env",
+      "host": "${env:ROKU_HOST}",
+      "stopOnEntry": false,
+      "enableDebuggerAutoRecovery": false,
+      "stopDebuggerOnAppExit": false,
+      "rootDir": "${workspaceFolder}/src",
+      "files": [
+        "source/**/*",
+        "components/**/*",
+        "images/**/*",
+        "fonts/**/*",
+        "manifest"
+      ],
+      "name": "Launch test-sample (dev)",
+      "injectRdbOnDeviceComponent": true
+    },
+    {
+      "type": "brightscript",
+      "request": "launch",
+      "envFile": "${workspaceFolder}/.env",
+      "host": "${env:ROKU_HOST}",
+      "stopOnEntry": false,
+      "enableDebuggerAutoRecovery": false,
+      "stopDebuggerOnAppExit": false,
+      "rootDir": "${workspaceFolder}/src",
+      "files": [
+        "source/**/*",
+        "components/**/*",
+        "images/**/*",
+        "fonts/**/*",
+        "manifest"
+      ],
+      "name": "Launch test-sample (prod)"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component
+  name="User"
+  extends="ContentNode"
+  >
+  <interface>
+    <field
+      id="userId"
+      type="string"
+      />
+    <field
+      id="location"
+      type="string"
+      />
+    <field
+      id="dataCollection"
+      type="string"
+      />
+    <field
+      id="dataSharing"
+      type="string"
+      />
+  </interface>
+</component>

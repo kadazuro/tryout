@@ -1,0 +1,21 @@
+<component
+  name="Consent"
+  extends="Task"
+  >
+  <interface>
+    <!-- Public -->
+    <function name="initialize" />
+    <function name="updateSettings" />
+    <function name="getUser" />
+    <function name="canUserChangeSettings" />
+    <field
+      id="initializeReady"
+      type="boolean"
+      alwaysNotify="true"
+      />
+  </interface>
+  <script
+    type="text/brightscript"
+    uri="Consent.brs"
+    />
+</component>

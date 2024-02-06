@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component
+  name="MainScene"
+  extends="Scene"
+  initialFocus="button"
+  >
+  <script
+    type="text/brightscript"
+    uri="MainScene.brs"
+    />
+  <children>
+    <LayoutGroup
+      id="preferencesGroup"
+      visible="false"
+      layoutDirection="vert"
+      addItemSpacingAfterChild="true"
+      itemSpacings="[50, 50, 50]"
+      >
+      <CheckList
+        id="checkList"
+        vertFocusAnimationStyle="floatingFocus"
+        itemSize="[1000,48]"
+        font="font:SmallSystemFont"
+        >
+        <ContentNode role="content">
+          <ContentNode title="Allow data collection for personalized recommendations" />
+          <ContentNode title="Allow data sharing with third parties" />
+        </ContentNode>
+      </CheckList>
+      <Label
+        id="disabledLabel"
+        width="1000"
+        wrap="true"
+        text="* Based on your current State regulations, you can't change the settings"
+        />
+      <LayoutGroup
+        layoutDirection="horiz"
+        itemSpacings="[400]"
+        >
+        <Button
+          id="saveButton"
+          text="Save changes"
+          showFocusFootprint="true"
+          minWidth="300"
+          iconUri=""
+          focusedIconUri=""
+          />
+        <Button
+          id="cancelButton"
+          text="Return to home"
+          showFocusFootprint="true"
+          minWidth="300"
+          iconUri=""
+          focusedIconUri=""
+          />
+      </LayoutGroup>
+    </LayoutGroup>
+    <!-- <Button
+      id="button"
+      text="Open preferences"
+      showFocusFootprint="true"
+      minWidth="300"
+      iconUri=""
+      focusedIconUri=""
+      visible="true"
+      /> -->
+    <ButtonGroup id="buttonGroup" />
+    <LayoutGroup
+      id="loadingGroup"
+      layoutDirection="vert"
+      horizAlignment="center"
+      translation="[910, 490]"
+      itemSpacings="[50, 50]"
+      visible="false"
+      >
+      <BusySpinner id="spinner" />
+      <Label
+        id="loadingLabel"
+        text="Loading..."
+        translation="[0, 200]"
+        />
+    </LayoutGroup>
+  </children>
+</component>
